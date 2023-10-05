@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cvMed"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_height="120dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/medImg"
+            android:layout_width="80dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="80dp"
+            android:src="@drawable/logo"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/medManu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:includeFontPadding="false"
+                android:lineSpacingMultiplier="5"
+                android:text="MANUFACTURER"
+                android:textColor="@color/blue1" />
+
+            <TextView
+                android:id="@+id/medName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:includeFontPadding="false"
+                android:text="Gaviscon Chewable Tablets Extra Strength Original Flavor - 100 ct"
+                android:textColor="@color/black_lighter"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/medPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:includeFontPadding="false"
+                android:text="123456"
+                android:textColor="@color/blue2"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:background="@color/white_darker"
+    android:layout_width="match_parent"
+    tools:context=".controller.DetailMed"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/detailImg"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:clickable="true"
+        android:src="@drawable/home_banner"/>
+
+        <LinearLayout
+            android:paddingHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/blue2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:lineSpacingMultiplier="5"
+                android:text="QUANTITY TO BUY: "
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/buyQty"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/lato"
+                android:numeric="integer" />
+
+            <Button
+                android:id="@+id/goBuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/colorSecondaryVariant"
+                android:fontFamily="@font/lato_bold"
+                android:text="Buy"
+                android:textColor="?attr/colorOnPrimary" />
+
+        </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/detailManu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:lineSpacingMultiplier="5"
+            android:text="MANUFACTURER"
+            android:textColor="@color/blue1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/detailName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Gaviscon Chewable Tablets Extra Strength Original Flavor - 100 ct"
+            android:textColor="@color/blue1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detailPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="123456"
+            android:textColor="@color/blue2"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/detailDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:lineSpacingExtra="2sp"
+            android:text="The quick brown fox jumps over the lazy dog. Lorem ipsum dolor sit amet."
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

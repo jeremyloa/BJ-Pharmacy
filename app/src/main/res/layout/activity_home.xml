@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/homNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        android:layout_alignBottom="@id/homFrag"
+        android:layout_gravity="bottom"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <FrameLayout
+        android:id="@+id/homFrag"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:background="@color/white_darker"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="30dp"
+        android:layout_height="60dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="logo"
+                android:src="@drawable/logo_horizontal"/>
+
+            <ImageButton
+                android:id="@+id/homLogout"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/white"
+                android:paddingHorizontal="5dp"
+                android:src="@drawable/ic_baseline_logout_24"
+                app:tint="@color/blue2" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
